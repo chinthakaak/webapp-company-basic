@@ -3,30 +3,54 @@
     <title></title>
     <script src="view/js/lib/jquery-1.11.3.js"></script>
     <script>
-    $(function(){
-      $("#header").load("view/html/header.html");
-      $("#footer").load("view/html/footer.html");
-    });
-</script>
-    <script>
-      input.image {
-      width:10px;
-      height:10px;
-      size:20
-  </script>
+        $(function(){
+          $("#header").load("view/html/header.html");
+          $("#footer").load("view/html/footer.html");
+        });
+    </script>
+    <style>
+        .floating-box {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        text-align: center;
+        color: green;
+        <!--align: center;-->
+        <!--bottom: 0;-->
+        <!--border: 3px solid #73AD21;-->
+        }
+
+        .after-box {
+        clear: left;
+        <!--border: 3px solid red;-->
+        }
+    </style>
 </head>
 <body>
 <div id="header"></div>
-    <h1>Company Home Page</h1>
-    <form>
-        <!--<img src="view/images/new-emp.jpeg">-->
-        <input type="image" src="../images/new-emp.jpeg" alt="submit">
-        <input type="image" src="../images/update-emp.jpeg">
 
-        <input type="image" src="../images/remuneration.jpeg">
-
-    </form>
-
+<div id="section">
+    <div class="floating-box">
+        <form>
+            <input type="image" src="view/images/new-emp.jpeg" alt="submit" width="250" height="250">
+        </form>
+        <br><b>New Employee</b>
+    </div>
+    <div class="floating-box">
+        <form>
+            <input type="image" src="view/images/update-emp.jpeg" alt="submit" width="250" height="250">
+        </form>
+        <br><b>Update Employee</b>
+    </div>
+    <div class="floating-box">
+        <form>
+            <input type="image" src="view/images/remuneration.jpeg" alt="submit" width="250" height="250">
+        </form>
+        <br><b>Employee Remuneration</b>
+    </div>
+    <div class="after-box"/>
+</div>
 <div id="footer"></div>
 </body>
 </html>
