@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title></title>
+    <script src="view/js/lib/jquery-1.11.3.js"></script>
+    <script>
+    $(function(){
+      $("#header").load("view/html/header.html");
+      $("#footer").load("view/html/footer.html");
+    });
+</script>
+</head>
+<body>
+<div id="header"></div>
+<form method="post" action="FrontControllerServlet.do">
+    <br>
+    Username:
+    <input type="text" name="username">
+    <br>
+    Password :
+    <input type="password" name="pwd">
+    <br>
+    <br>
+    <input type="submit" value="Login">
+    <br>
+    <br>
+</form>
+<div id="footer"></div>
+</body>
+</html>
